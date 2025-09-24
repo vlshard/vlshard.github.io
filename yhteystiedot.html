@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yhteystiedot - Kukkakauppa</title>
+  <link rel="stylesheet" href="tyyli.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #f8f0f4, #ffffff);
+      font-family: Arial, sans-serif;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .intro h2 {
+      font-size: 3rem;
+      color: #7a3c56;
+      margin-bottom: 1rem;
+    }
+
+    .intro .iso-teksti {
+      font-size: 1.5rem;
+      color: #e91e63;
+      margin-bottom: 2rem;
+    }
+
+    .ota-yhteytta {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .yhteys-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .yhteys-tiedot {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .yhteys-tiedot p {
+      font-size: 1.2rem;
+      margin: 0.8rem 0;
+      color: #333;
+    }
+
+    .aikataulu {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    .yhteys-kuva {
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 800px) {
+      .yhteys-container {
+        flex-direction: column;
+      }
+      .yhteys-tiedot, .yhteys-kuva {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kukkakauppa</h1>
+    <nav>
+      <ul>
+        <li><a href="kukkakauppa.html">Pääsivu</a></li>
+        <li><a href="palvelut.html">Palvelut</a></li>
+        <li><a href="tuotteet.html">Tuotteet</a></li>
+        <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Yhteystiedot</h2>
+    <p class="iso-teksti">Ota meihin yhteyttä!</p>
+  </section>
+
+  <section class="ota-yhteytta">
+    <p>Haluatko tilata kukkia tai kysyä palveluistamme? Ota meihin yhteyttä – autamme sinua mielellämme!</p>
+    <p>Puhelimitse ma-pe 9:00–17:00 tai sähköpostilla info@kukkakauppa.fi</p>
+  </section>
+
+<section class="yhteys-container" style="position:relative; height:400px;">
+  <img src="ruusu4.jpg" alt="Kukat ja sydän" 
+       style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); 
+              width:100%; height:100%; object-fit:cover; opacity:0.2; z-index:0;">
+  
+  <div class="yhteys-tiedot" style="position:relative; z-index:1; text-align:center; padding:2rem;">
+    <p>📞 Puhelin: 010 123 4567</p>
+    <p>✉️ Sähköposti: info@kukkakauppa.fi</p>
+    
+  </div>
+</section>
+
+
+</body>
+</html>
