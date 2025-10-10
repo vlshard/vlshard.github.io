@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kukkakauppa – Tuotteet</title>
+  <link rel="stylesheet" href="tyyli.css">
+  <style>
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .card {
+      text-align: center;
+      border-radius: 12px;
+      background: #fef6f9;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kukkakauppa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Pääsivu</a></li>
+        <li><a href="palvelut.html">Palvelut</a></li>
+        <li><a href="tuotteet.html" class="active">Tuotteet</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Tuotteemme</h2>
+      <p class="subheading">Tuoreita kukkia, kauniita hetkiä</p>
+      <p>Tutustu meidän upeaan valikoimaamme.</p>
+    </section>
+
+    <section class="products">
+      <div class="card">
+        <img src="ruusu 1.jpg" alt="Ruusut" class="product-img">
+        <h3><a href="ruusut.html">Ruusut</a></h3>
+        <p>Alkaen 35 € / kimppu</p>
+      </div>
+
+      <div class="card">
+        <img src="liljat.jpg" alt="Liljat" class="product-img">
+        <h3><a href="liljat.html">Liljat</a></h3>
+        <p>Alkaen 30 € / kimppu</p>
+      </div>
+
+      <div class="card">
+        <img src="sesonki.jpeg" alt="Sesonkikukat" class="product-img">
+        <h3><a href="Sesonkikukat.html">Sesonkikukat</a></h3>
+        <p>Alkaen 25 € / kimppu</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Yhteystiedot: Kukkatienkatu 1, 00100 Helsinki | puh. 010 123 4567 | info@kukkakauppa.fi</p>
+  </footer>
+</body>
